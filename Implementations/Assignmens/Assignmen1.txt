@@ -1,0 +1,37 @@
+
+ques 1) using numpy create an array x , that contain 20 random numbers in range +1 , -1 
+and apply Relu function to X and plot the output , to show the effect of Relu activation function 
+
+
+
+ques(2)
+Implement linear regression from scratch using x from ques 1 
+and y in these two cases : 
+1) y  = x * 0.2 + .5
+
+2) y coming from this code : 
+
+ou can generate  using a linear relationship with some added noise. Here's how:
+
+
+import numpy as np
+
+# Step 1: Generate X (20 samples from a normal distribution)
+np.random.seed(42)  # For reproducibility
+X = np.random.normal(loc=0, scale=1, size=20)  # Mean=0, Std=1
+
+# Step 2: Define linear relationship
+m = 2.5  # Slope
+b = 1.0  # Intercept
+
+# Step 3: Add noise
+noise = np.random.normal(loc=0, scale=0.5, size=20)  # Small noise
+y = m * X + b + noise
+
+# Display the data
+print("X:", X)
+print("y:", y)
+
+what is loss in each case ? 
+in two ways ( mean least squares error ) , ( least squares error ) 
+What is the best parameters of this model ( best b and best m) ? in each case
